@@ -1,23 +1,24 @@
-import logo from './logo.svg';
+import React from "react";
+import Cake from "./components/Cake";
 import './App.css';
+import IceCream from "./components/iceCream";
+import NewCake from "./components/NewCake";
+import Item from "./components/Item";
+import NewIceCream from "./components/NewIceCream";
+import UserContainer from "./components/UserContainer";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Cake />
+      <IceCream />
+      <NewCake />
+      <NewIceCream />
+      <Item item="cake"/>
+      <Item item="iceCream"/>
+      <br/>
+      <br/>
+      <UserContainer/>
     </div>
   );
 }
